@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Product | Dhanoka</title>
+<meta name="description" content="View product details, available pack sizes, and send an enquiry through Dhanoka.">
+<link rel="canonical" href="https://www.dhanoka.example/product.html">
+<meta property="og:title" content="Product | Dhanoka">
+<meta property="og:description" content="View product details, available pack sizes, and send an enquiry through Dhanoka.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="announce-bar">Reliable agricultural inputs &nbsp;•&nbsp; Farmer-focused buying &nbsp;•&nbsp; Simple product enquiry</div>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-link" aria-label="Dhanoka home">
+        <img src="assets/logo/dhanoka-logo.svg" alt="Dhanoka logo">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="ashok-singh-yadav.html">Ashok Singh Yadav</a>
+        <a href="knowledge.html">Farm Knowledge</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" data-search-toggle aria-label="Search products">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a class="icon-btn" href="cart.html" aria-label="View cart">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" style="display:none;">0</span>
+        </a>
+        <button class="btn btn-lang" data-lang-toggle type="button" aria-label="हिंदी में देखें" style="border:1px solid var(--primary-green,#2f6b3a); color:var(--primary-green,#2f6b3a); background:#fff; font-weight:700; font-size:13px; padding:6px 12px; border-radius:20px; cursor:pointer; margin-right:4px;">हिंदी</button>
+        <a class="btn btn-enquire desktop-only" href="contact.html">Enquire / Order</a>
+        <button class="hamburger" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="search-panel">
+      <form data-nav-search-form role="search">
+        <input type="search" placeholder="Search products, e.g. Kinzan, Fungicide..." aria-label="Search products">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  <div class="mobile-drawer">
+    <div class="backdrop"></div>
+    <div class="panel">
+      <button class="close-drawer" aria-label="Close menu">&times;</button>
+      <nav aria-label="Mobile">
+        <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="categories.html">Categories</a>
+          <a href="about.html">About Us</a>
+          <a href="ashok-singh-yadav.html">Ashok Singh Yadav</a>
+          <a href="knowledge.html">Farm Knowledge</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+      </nav>
+      <button class="btn btn-outline btn-block" data-lang-toggle type="button" style="margin-top:12px;">हिंदी</button>
+      <a class="btn btn-primary btn-block" style="margin-top:24px;" href="contact.html">Enquire / Order</a>
+    </div>
+  </div>
+
+<main id="main">
+
+<div class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="products.html">Products</a><span aria-hidden="true">/</span><span data-pd-name>Product</span></nav>
+
+  <div id="pd-root" class="product-detail" style="display:none;">
+    <div class="pd-gallery">
+      <div class="main-image">
+        <img data-pd-image src="" alt="" loading="lazy">
+      </div>
+    </div>
+    <div class="pd-info">
+      <div class="brand-line" data-pd-brand-line></div>
+      <h1 data-pd-name>Product Name</h1>
+      <span class="badge pd-category" data-pd-category>Category</span>
+
+      <p data-pd-description style="color:var(--muted-text); font-size:15.5px; margin-top:16px;"></p>
+
+      <div class="pack-section">
+        <h4>Available Pack Sizes</h4>
+        <div class="pack-options" data-pd-pack-options></div>
+      </div>
+
+      <div class="qty-selector">
+        <button type="button" data-qty-decrease aria-label="Decrease quantity">−</button>
+        <span data-qty-value>1</span>
+        <button type="button" data-qty-increase aria-label="Increase quantity">+</button>
+      </div>
+
+      <div class="pd-actions">
+        <button class="btn btn-primary" data-pd-add-cart>Send Enquiry</button>
+        <button class="btn btn-whatsapp" data-pd-whatsapp>Order via WhatsApp</button>
+      </div>
+
+      <div class="notice-box">Please refer to the product label and applicable agricultural guidance before use.</div>
+
+      <div class="info-block">
+        <h3>Product Information</h3>
+        <p data-pd-info-block>Product information will be updated.</p>
+      </div>
+      <div class="info-block">
+        <h3>Important Information</h3>
+        <p>Product availability, pack sizes and information may vary. Please verify product labels and seek appropriate agricultural guidance before use. Dhanoka does not claim manufacturer, distributor or official partnership status for products shown unless explicitly stated.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-state" id="pd-not-found" style="display:none;">
+    <h3>Product not found</h3>
+    <p>The product you're looking for may have been moved or is no longer listed.</p>
+    <a class="btn btn-secondary" href="products.html">Browse All Products</a>
+  </div>
+</div>
+<div style="height:80px;"></div>
+
+<div class="sticky-mobile-cta">
+  <button class="btn btn-primary btn-block" data-pd-sticky-enquire>Enquire Now</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const id = new URLSearchParams(window.location.search).get("id");
+  const product = getProductById(id);
+  const root = document.getElementById("pd-root");
+  const notFound = document.getElementById("pd-not-found");
+
+  if (!product) {
+    notFound.style.display = "block";
+    return;
+  }
+  root.style.display = "grid";
+  document.title = product.name + " | Dhanoka";
+
+  let selectedPack = (product.packSizes && product.packSizes[0]) || "";
+  let qty = 1;
+
+  qsa("[data-pd-name]").forEach(el => el.textContent = product.name);
+  qs("[data-pd-image]").src = product.image;
+  qs("[data-pd-image]").alt = product.name + " pack";
+  qs("[data-pd-image]").onerror = function() { this.onerror=null; this.src = "assets/products/_placeholder.svg"; };
+  qs("[data-pd-category]").textContent = categoryLabel(product.category);
+  qs("[data-pd-brand-line]").textContent = brandLabel(product.brand) ? ("Brand: " + product.brand) : "Available through Dhanoka";
+  qs("[data-pd-description]").textContent = descriptionOrPlaceholder(product.description);
+  qs("[data-pd-info-block]").textContent = descriptionOrPlaceholder(product.technicalDetails);
+
+  const packWrap = qs("[data-pd-pack-options]");
+  if (product.packSizes && product.packSizes.length) {
+    packWrap.innerHTML = product.packSizes.map((sz, idx) =>
+      `<button type="button" data-pack="${escapeHtml(sz)}" class="${idx===0 ? 'selected':''}">${escapeHtml(sz)}</button>`
+    ).join("");
+  } else {
+    packWrap.innerHTML = `<span class="badge">Pack size: to be updated</span>`;
+  }
+  qsa("button", packWrap).forEach(btn => {
+    btn.addEventListener("click", () => {
+      qsa("button", packWrap).forEach(b => b.classList.remove("selected"));
+      btn.classList.add("selected");
+      selectedPack = btn.dataset.pack;
+    });
+  });
+
+  qs("[data-qty-value]").textContent = qty;
+  qs("[data-qty-decrease]").addEventListener("click", () => {
+    qty = Math.max(1, qty - 1);
+    qs("[data-qty-value]").textContent = qty;
+  });
+  qs("[data-qty-increase]").addEventListener("click", () => {
+    qty = qty + 1;
+    qs("[data-qty-value]").textContent = qty;
+  });
+
+  function enquireAction() {
+    addToCart(product.id, selectedPack, qty);
+  }
+  qs("[data-pd-add-cart]").addEventListener("click", enquireAction);
+  qs("[data-pd-sticky-enquire]").addEventListener("click", enquireAction);
+
+  qs("[data-pd-whatsapp]").addEventListener("click", () => {
+    const message = `Hello Dhanoka,\n\nI am interested in the following agricultural product:\n\nProduct: ${product.name}\nPack Size: ${selectedPack}\nQuantity: ${qty}\n\nName: \nVillage/Town: \nDistrict: \nState: \n\nPlease share availability and pricing.`;
+    window.open(buildWhatsAppLink(message), "_blank");
+  });
+});
+</script>
+
+</main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/dhanoka-logo.svg" alt="Dhanoka logo" style="height:32px;filter:brightness(0) invert(1);opacity:0.92;">
+          <p><strong style="color:#fff;">Better Inputs. Better Farming.</strong></p>
+          <p>Dhanoka helps farmers discover and enquire about a wide range of agricultural inputs and crop-care products through a simple, transparent buying experience.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Dhanoka</a></li>
+            <li><a href="ashok-singh-yadav.html">Ashok Singh Yadav</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="index.html#featured">Featured Products</a></li>
+            <li><a href="contact.html">Product Enquiry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="knowledge.html">Farm Knowledge</a></li>
+            <li><a href="knowledge.html">FAQs</a></li>
+            <li><a href="products.html">Product Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Dhanoka. All rights reserved. &nbsp;·&nbsp; An agricultural input and crop-care business based in India.
+        </div>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/filters.js"></script>
+
+
+</body>
+</html>

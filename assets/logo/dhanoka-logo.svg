@@ -1,0 +1,8 @@
+<svg width="180" height="48" viewBox="0 0 180 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dhanoka logo">
+  <g>
+    <path d="M24 4 C 30 10, 34 16, 34 22 C 34 29.2, 28.2 35, 21 35 C 13.8 35, 8 29.2, 8 22 C 8 16, 12 10, 18 4 Z" fill="#1F5C3D"/>
+    <path d="M21 35 L21 44" stroke="#7B5E43" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="46" y="20" font-family="'DM Sans','Manrope',sans-serif" font-size="19" font-weight="700" fill="#1F5C3D" letter-spacing="0.5">DHANOKA</text>
+  <text x="46" y="35" font-family="'DM Sans','Manrope',sans-serif" font-size="9.5" font-weight="500" fill="#7B5E43" letter-spacing="1.5">AGRI INPUTS</text>
+</svg>

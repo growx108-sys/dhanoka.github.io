@@ -1,0 +1,127 @@
+/* ============================================================
+   RESPONSIVE — Dhanoka
+   Breakpoints: 1024 (tablet), 720 (large phone), 480 (phone),
+   380 (small phone). Mobile-first touch, readability and
+   no-horizontal-scroll fixes layered on top of the base styles.
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { order: -1; aspect-ratio: 16/9; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+  .knowledge-grid { grid-template-columns: repeat(2, 1fr); }
+  .founder-preview { grid-template-columns: 1fr; }
+  .founder-preview img { max-width: 320px; margin: 0 auto; }
+  .product-detail { grid-template-columns: 1fr; }
+  .cart-layout { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .contact-grid { grid-template-columns: 1fr; }
+  .value-narrative { grid-template-columns: 1fr; }
+}
+
+/* Large phone / small tablet */
+@media (max-width: 720px) {
+  .nav-links,
+  .hamburger + .nav-actions .btn-enquire { display: none; }
+  .hamburger { display: flex; }
+  .nav-actions .btn-enquire.desktop-only { display: none; }
+  /* Header language button is hidden on mobile — the same toggle lives
+     inside the slide-out drawer so it stays reachable with one thumb. */
+  .nav-actions > .btn-lang { display: none; }
+  .nav-actions { gap: 6px; }
+  .nav-inner { padding: 10px var(--space-2); gap: var(--space-2); }
+  .logo-link img, .logo-link svg { height: 28px; }
+
+  .hero { padding: var(--space-4) 0 var(--space-4); }
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .hero-ctas .btn { width: 100%; }
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+  .category-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .steps-grid { grid-template-columns: 1fr; }
+  .pillars-grid { grid-template-columns: 1fr; }
+  .knowledge-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: var(--space-3); }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .form-grid { grid-template-columns: 1fr; }
+  .cart-item { grid-template-columns: 60px 1fr; }
+  .cart-item .thumb { width: 60px; height: 60px; }
+  .cart-item .ci-actions { grid-column: 1 / -1; justify-content: space-between; margin-top: 8px; flex-wrap: wrap; }
+  .cart-summary { position: static; }
+  .section { padding: var(--space-5) 0; }
+  .section-tight { padding: var(--space-4) 0; }
+  .cta-band { padding: var(--space-4) var(--space-2); }
+  .cta-band .hero-ctas { align-items: center; }
+  .cta-band .hero-ctas .btn { width: 100%; max-width: 320px; }
+
+  .pd-actions .btn { min-width: 0; width: 100%; }
+  .toolbar { flex-direction: column; align-items: stretch; }
+  .toolbar .result-count { margin-left: 0; }
+
+  body { padding-bottom: 68px; } /* room for sticky mobile CTA */
+  .sticky-mobile-cta {
+    display: block;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+
+  /* Prevent iOS Safari auto-zoom-on-focus: inputs need >=16px font-size */
+  input, select, textarea,
+  .search-panel input,
+  .toolbar input[type="search"],
+  .toolbar select {
+    font-size: 16px;
+  }
+
+  /* Comfortable 44px+ touch targets */
+  .icon-btn, .hamburger { width: 44px; height: 44px; }
+  .qty-selector button { width: 40px; height: 40px; }
+  .mobile-drawer .panel a { padding: 15px 4px; }
+
+  .announce-bar { font-size: 12px; padding: 7px var(--space-2); line-height: 1.5; }
+  .map-placeholder iframe { height: 220px !important; }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .product-card .p-name { font-size: 14.5px; }
+  .product-card .card-actions { flex-direction: column; }
+  .hero h1 { font-size: 30px; }
+  .hero-visual { aspect-ratio: 4/3; }
+  .container { padding: 0 var(--space-2); }
+  .page-header { padding: var(--space-4) 0 var(--space-3); }
+  .section-header p { font-size: 14.5px; }
+  .cta-band h2 { font-size: 22px; }
+  .founder-quote { font-size: 18px; }
+  .contact-info-card .row { flex-wrap: wrap; }
+  .contact-info-card .label { min-width: 0 !important; width: 100%; }
+  .back-to-top { width: 40px; height: 40px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); }
+}
+
+/* Small phones (e.g. iPhone SE, older Androids) */
+@media (max-width: 380px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .trust-grid { grid-template-columns: 1fr; }
+  .btn { padding: 12px 18px; font-size: 14px; }
+  .nav-inner { padding: 8px var(--space-1); }
+  .logo-link img, .logo-link svg { height: 24px; }
+  h1 { word-break: break-word; }
+}
+
+/* Safe-area padding for notched phones on fixed/sticky UI */
+.mobile-drawer .panel { padding-top: calc(var(--space-3) + env(safe-area-inset-top)); }
+.back-to-top { bottom: calc(24px + env(safe-area-inset-bottom)); }
+.toast-container { bottom: calc(24px + env(safe-area-inset-bottom)); }
+
+/* Prevent any horizontal overflow */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, iframe { max-width: 100%; }
+table { display: block; max-width: 100%; overflow-x: auto; }
+
